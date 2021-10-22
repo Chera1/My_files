@@ -392,20 +392,20 @@ root.title("ИППОДРОМ")
 # Запрет на изменение окна
 root.resizable(False, False)
 
-road_image = PhotoImage(file="../PycharmProjects/untitled/road.png")  # Загружаем изоображение
+road_image = PhotoImage(file="media/road.png")  # Загружаем изоображение
 road = Label(root, image=road_image)  # Устанавливаем в Label
 road.place(x=0, y=17)  # Выводим в окно
 
-horse01_image = PhotoImage(file="../PycharmProjects/untitled/horse01.png")
+horse01_image = PhotoImage(file="media/horse01.png")
 horse01 = Label(root, image=horse01_image)
 
-horse02_image = PhotoImage(file="../PycharmProjects/untitled/horse02.png")
+horse02_image = PhotoImage(file="media/horse02.png")
 horse02 = Label(root, image=horse02_image)
 
-horse03_image = PhotoImage(file="../PycharmProjects/untitled/horse03.png")
+horse03_image = PhotoImage(file="media/horse03.png")
 horse03 = Label(root, image=horse03_image)
 
-horse04_image = PhotoImage(file="../PycharmProjects/untitled/horse04.png")
+horse04_image = PhotoImage(file="media/horse04.png")
 horse04 = Label(root, image=horse04_image)
 
 horseplaceinwindow()
