@@ -119,7 +119,7 @@ def roulette():
             number = getRoulette(True)
             print()
             color(11)
-            print(f"    Выпало число {number}" + "*" * number)
+            print(f"    Выпало число {number} " + "*" * number)
             if number == 37:
                 print("    Выпало число 00" + "*" * 37)
             if number == 38:
@@ -453,7 +453,7 @@ def getIntInput(minimum, maximum, message):
 # Чтение из файла осташийся функции
 def readFile():
     try:
-        f = open("../../По книжке/money.dat", "r")
+        f = open("money.dat", "r")
         m = int(f.readline())
         f.close()
     except FileNotFoundError:
@@ -465,7 +465,7 @@ def readFile():
 # Запись в файл
 def write_file(moneyToSave):
     try:
-        f = open("../../По книжке/money.dat", "w")
+        f = open("money.dat", "w")
         f.write(str(moneyToSave))
         f.close()
     except:
